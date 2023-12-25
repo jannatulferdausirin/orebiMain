@@ -12,7 +12,7 @@ const Banner = () => {
              <Container>
              <Flex className="relative ">
             
-            <div className='relative'>
+            <div className=''>
                 <Image className=" " src={logoImage} alt={logoImage}/>
             </div>
             <div className='absolute top-[20%] left-[10%]'>

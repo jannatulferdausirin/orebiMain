@@ -11,12 +11,12 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <section className="bg-[#F5F5F3] py-12  mt-24">
+        <section className="bg-[#F5F5F3] py-12  mt-24 pl-8">
         <Container>
-          <Flex className="justify-between">
-            <div>
-              <Flex className="gap-56">
-                <Flex className="gap-36">
+          <Flex className="justify-between ">
+            <div className='pl-4'>
+              <Flex className="gap-28">
+                <Flex className="gap-24 pl-4">
                   <div>
                     <Heading
                       text="Menu"
@@ -74,7 +74,7 @@ const Footer = () => {
                     <Heading
                       text="company@domain.com"
                       as="h3"
-                      className="mb-4 font-bold tex-gray-400 text-black"
+                      className="mb-4 font-semibold tex-gray-400 text-black"
                     />
                     <ul>
                       <List

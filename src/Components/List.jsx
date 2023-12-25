@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const List = ({className, text}) => {
     return (
         <ul>
             <li >
-            <a className={` ${className}: text-lg hover:text-black hover:font-bold duration-500 `} href="">{text}</a>
+            <Link className={` ${className}: text-lg hover:text-black hover:font-bold duration-500 `} to ={text} >{text}</Link>
         </li>
         </ul>
     );

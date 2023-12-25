@@ -15,11 +15,11 @@ const Navbar = () => {
 
           <ul className="mx-auto">
             <Flex className="gap-12">
-              <List text="Home" />
-              <List text="Shop" />
-              <List text="About" />
-              <List text="Contacts" />
-              <List text="Journal" />
+              <List to="/home" text="Home" />
+              <List to="/shop" text="Shop" />
+              <List to="/about" text="About" />
+              <List to="/contacts" text="Contacts" />
+              <List to="/journal" text="Journal" />
             </Flex>
           </ul>
         </Flex>
