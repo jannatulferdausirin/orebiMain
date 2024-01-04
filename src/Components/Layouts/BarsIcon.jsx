@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const BarsIcon = () => {
+  // const [open,setOpen]=useState(false);
    const Menus = [
     "Accessories",
     "Furniture",
@@ -10,10 +11,13 @@ const BarsIcon = () => {
     "Home Appliance",
   ];
   return (
+    
    
       <div className="dropdown dropdown-bottom">
         <div tabIndex={0} role="button" className="btn m-1">
-          <svg
+       
+           <svg
+          // onClick={() => SetOpen(!open)}
             width="19"
             height="10"
             viewBox="0 0 19 10"
@@ -29,8 +33,10 @@ const BarsIcon = () => {
               fill="#262626"
             />
           </svg>
+       
         </div>
-        <ul
+     
+         <ul
           tabIndex={0}
           className="dropdown-content z-[1] menu p-2 shadow bg-black rounded-box w-52"
         >
@@ -43,7 +49,13 @@ const BarsIcon = () => {
                 </li>
               ))}
         </ul>
+     
       </div>
+   
+       
+
+
+
     
   );
 };

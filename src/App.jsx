@@ -12,6 +12,10 @@ import Contacts from './Components/Layouts/Contacts';
 import Shop from './Components/Layouts/Shop';
 import Journal from './Components/Layouts/Journal';
 import NotFound from './Components/Layouts/NotFound';
+import SignUp from './Components/Layouts/SignUp';
+import LogOut from './Components/Layouts/LogOut';
+import CheakOut from './Components/Layouts/CheakOut';
+import ViewCart from './Components/Layouts/ViewCart';
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +46,22 @@ function App() {
         {
         path:'/journal',
         element:<Journal></Journal>
+      },
+        {
+        path:'/signUp',
+        element:<SignUp></SignUp>
+      },
+        {
+        path:'/logout',
+        element:<LogOut></LogOut>
+      },
+      {
+      path:'/viewcart',
+      element:<ViewCart></ViewCart>
+    },
+        {
+        path:'/cheakout',
+        element:<CheakOut></CheakOut>
       },
     ]
     },

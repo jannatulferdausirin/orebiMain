@@ -8,6 +8,7 @@ import { FaChevronRight } from "react-icons/fa6";
 import Label from '../Label';
 import Input from '../Input';
 import Button from '../Button';
+import { Link } from 'react-router-dom';
 // import GoogleMap from './GoogleMap';
 
 
@@ -17,10 +18,10 @@ const Contacts = () => {
         <Container>
           <div className='mt-40'>
            <Heading as='h2' text="Contact" className="font-bold text-[49px] mb-6"/>
-         <Flex className="items-center  gap-2 text-lg font-medium">
-            <Anchor text="Home" href="home"/>
+         <Flex className="items-center gap-2 text-lg font-medium">
+         <Link to="/home">Home</Link>
             <FaChevronRight />
-            <Anchor text="Contacts" href="contacts"/>
+            <Link to="/contacts">Contacts</Link>
          </Flex>
            </div>
            <Heading as='h2' text="Fill up a Form" className=" text-gray-800 text-[39px] font-bold mt-32"/>
